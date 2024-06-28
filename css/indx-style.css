@@ -1,0 +1,517 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ :root {
+     --mean-font {
+         font-family: 'Montserrat', sans-serif;
+         font-family: 'Poppins', sans-serif;
+     }
+
+     scroll-padding-top: 62px;
+    
+ }
+ html , body {
+    scroll-behavior: auto !important;
+ }
+
+
+ .container {
+     --bs-gutter-x: 1.5rem;
+     --bs-gutter-y: 0;
+     width: 77%;
+     padding-right: calc(var(--bs-gutter-x) * .5);
+     padding-left: calc(var(--bs-gutter-x) * .5);
+     margin-right: auto;
+     margin-left: auto;
+ }
+
+ /* --------------------header------------------ */
+
+ header {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%), url(../imges/bg.jpg);
+     height: 100vh;
+     background-attachment: fixed;
+     background-size: cover;
+
+ }
+
+ .nav-fixed {
+     background-color: #FFFFFF;
+     position: fixed;
+     top: 100vh;
+ }
+
+ nav a {
+     color: white !important;
+ }
+
+ /* .nav-underline:hover {
+  
+ } */
+
+ .content-header h5 {
+     font-family: var(--mean-font);
+ }
+
+ .content-header h1 {
+     font-family: var(--mean-font);
+     font-size: 70px;
+ }
+
+ .i-after1 i {
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     margin: auto;
+     background-color: black;
+     border-radius: 50%;
+ }
+
+ /* -----------------------About-------------------------- */
+
+ .About-color {
+     background-color: #FFFFFF;
+ }
+
+ .bg-hero {
+     background-image: url(../imges/dots.png);
+ }
+
+ .bg-hero img {
+     padding-left: 30px;
+     margin-bottom: 30px;
+ }
+
+ .progress {
+     height: 25px !important;
+     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+ }
+
+ .prog-after::after {
+     color: white;
+     content: "Web Design";
+     position: relative;
+     bottom: 25px;
+     padding: 10px;
+
+ }
+
+ .prog-after1::after {
+     color: white;
+     content: "Branding";
+     position: relative;
+     bottom: 25px;
+     padding: 10px;
+
+ }
+
+ .prog-after2::after {
+     color: white;
+     content: "Development";
+     position: relative;
+     bottom: 25px;
+     padding: 10px;
+
+ }
+
+ .prog-after2::after {
+     color: white;
+     content: "Development";
+     position: relative;
+     bottom: 25px;
+     padding: 10px;
+
+ }
+
+ .prog-after::before {
+     color: white;
+     content: "95%";
+     position: absolute;
+     left: 85%;
+     bottom: 23px;
+     padding: 10px;
+
+ }
+
+ .prog-after1::before {
+     color: white;
+     content: "80%";
+     position: absolute;
+     left: 70%;
+     bottom: 23px;
+     padding: 10px;
+
+ }
+
+ .prog-after2::before {
+     color: white;
+     content: "90%";
+     position: absolute;
+     left: 80%;
+     bottom: 15px;
+     padding: 10px;
+
+ }
+
+ .bt-hover {
+     color: white;
+     background-color: black;
+     transition: all 1s;
+ }
+
+ .bt-hover:hover {
+     color: black;
+     background-color: white;
+ }
+
+ .bt-hover1 {
+     color: black;
+     border: 1 solid black;
+     background-color: white;
+     transition: all 1s;
+
+ }
+
+ .bt-hover1:hover {
+     color: white;
+     background-color: black;
+     border: none;
+ }
+
+ /* -----------------------services------------------------- */
+ .ser-color {
+     background-color: #F7F7F7;
+ }
+
+ .services .container h3 {
+     position: relative;
+     color: #343434;
+     font-size: 40px;
+     z-index: 2;
+     font-family: var(--mean-font);
+ }
+
+ .services .container h3::after {
+     content: "";
+     background-image: url(../imges/dots.png);
+     width: 13%;
+     height: 30px;
+     position: absolute;
+     bottom: -10px;
+     left: 43.5%;
+     z-index: -1;
+ }
+
+ .i-after i {
+     color: #1e1e1e;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 80px;
+     height: 80px;
+     background-color: #F7F7F7;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+ }
+
+ .po-hover:hover i {
+     color: white;
+     border-radius: 50%;
+     background-color: black;
+     overflow: hidden;
+ }
+
+ /* -----------------------------Work---------------------------- */
+ .wor-color {
+     background-color: #FFFFFF;
+ }
+
+ .content-hover {
+     position: absolute;
+     top: 5%;
+     left: 38%;
+     z-index: 4;
+     opacity: 0;
+     transition: all 1s;
+ }
+
+ .img-hover:hover .content-hover {
+     top: 37%;
+     opacity: 1;
+ }
+
+ .img-after::after {
+     content: "";
+     font-weight: bold;
+     position: absolute;
+     top: 2%;
+     bottom: 2%;
+     left: 2%;
+     right: 2%;
+     background-color: #FDFDFD;
+     z-index: 2;
+     opacity: 0;
+     transition: all 1s;
+
+ }
+
+ .img-hover:hover .img-after::after {
+     opacity: 1;
+ }
+
+ .img-after .icon {
+     position: absolute;
+     bottom: 10%;
+     left: 42%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+     opacity: 0;
+ }
+
+ .img-hover:hover .img-after .icon {
+     bottom: 40%;
+     opacity: 1;
+ }
+
+ .img-after .icon:hover {
+     color: black;
+     background-color: white;
+ }
+
+ .img-after .icon1 {
+     position: absolute;
+     bottom: 10%;
+     left: 52%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+     opacity: 0;
+ }
+
+ .img-after .icon1:hover {
+     color: black;
+     background-color: white;
+ }
+
+ .img-hover:hover .img-after .icon1 {
+     bottom: 40%;
+     opacity: 1;
+ }
+
+ /*-------------------------------Clients------------------------------- */
+ .services .container .h3-style h3::after {
+     content: "";
+     background-image: url(../imges/dots.png);
+     width: 30%;
+     height: 30px;
+     background-repeat: repeat;
+     position: absolute;
+     bottom: -10px;
+     left: 35%;
+     z-index: -1;
+ }
+
+ .carousel-indicators [data-bs-target] {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: #869791;
+ }
+
+ .img-style img {
+     width: 90px;
+     height: 90px;
+ }
+
+ /* ---------------------------Team---------------------------- */
+ .services .container .h3-style1 h3::after {
+     content: "";
+     background-image: url(../imges/dots.png);
+     width: 16%;
+     height: 30px;
+     background-repeat: repeat;
+     position: absolute;
+     bottom: -10px;
+     left: 42%;
+     z-index: -1;
+ }
+
+ .img-after1 {
+     content: "";
+     position: absolute;
+     top: 2%;
+     bottom: 2%;
+     left: 2%;
+     right: 2%;
+     background-color: rgba(252, 252, 252, 0.9);
+     z-index: 2;
+     opacity: 0;
+     transition: all 1s;
+ }
+
+ .img-hover1:hover .img-after1 {
+     opacity: 1;
+     transform: rotateY(180deg);
+     transition: all 1s;
+ }
+ .img-hover2:hover img {
+ transform: scale(1.2 ,1.2);
+ transition: all 1s ;
+ }
+.icons{
+    position: relative;
+    top: 50%;
+    transform: rotateY(180deg);
+}
+ .icons .one {
+     position: absolute;
+     left: 20%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+ }
+ .icons .one:hover {
+    color: black;
+    background-color: white;  
+    border: 1px solid black;
+ }
+ .icons .tow {
+     position: absolute;
+     left: 35%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+ }
+ .icons .tow:hover {
+    color: black;
+    background-color: white;  
+    border: 1px solid black;
+ }
+ .icons .three {
+     position: absolute;
+     left: 50%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+ }
+ .icons .three:hover {
+    color: black;
+    background-color: white;  
+    border: 1px solid black;
+ }
+ .icons .four {
+     position: absolute;
+     left: 65%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     margin: auto;
+     border-radius: 50%;
+     transition: all 1s;
+     z-index: 4;
+ }
+ .icons .four:hover {
+    color: black;
+    background-color: white;  
+    border: 1px solid black;
+ }
+ .img-after1 .icons i:hover i  {
+    color: black;
+    background-color: white;  
+    border: 1 solid black;
+ }
+
+ .img-hover:hover .img-after1 .icon1 {
+     opacity: 1;
+     transform: rotateY(360deg);
+     transition: all 1s;
+ }
+
+.card-body{
+    background-color: #5B5B5B;
+}
+ /* --------------------------------Contact----------------------------- */
+ .icon2 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #F4F4F4;
+    margin: auto;
+    border-radius: 50%;
+    transition: all 1s ;
+    margin-bottom: 8px;
+ }
+ .content1:hover .icon2 {
+    color: white;
+    background-color: black;
+   
+ }
+.About-color1 {
+    background-color:#F4F4F4 !important ;
+}
+#Contact .form-control {
+    border-style: none;
+    box-shadow: none;
+}
+
+
+ /* ----------------------------------Footer---------------------------------- */
+ .footer-color{
+    background-color:#1C1C1C ;
+    color: #6F817F;
+ }
+ /* -------------------------------------------------------------------------- */
+ 
